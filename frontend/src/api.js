@@ -17,7 +17,20 @@ export async function confirmIngredients(ingredients) {
   if (!res.ok) throw new Error("Save failed");
   return res.json();
 }
+export async function generateRecipes(dishName = null) {
 
+  const res = await fetch(`${BASE}/recipes`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      dish_name: dishName
+    })
+  });
+
+  return res.json();
+}
 export async function getPantry() {
   const res = await fetch(`${BASE}/pantry`);
   return res.json();

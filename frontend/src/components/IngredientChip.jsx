@@ -1,3 +1,8 @@
+const CATEGORIES = [
+  "produce", "spices", "grains", "dairy", "beverages",
+  "packaged", "canned", "frozen", "bakery", "meat", "fish", "other"
+];
+
 export default function IngredientChip({ item, onChange, onRemove }) {
   const low = item.needs_confirmation;
 
@@ -27,7 +32,17 @@ export default function IngredientChip({ item, onChange, onRemove }) {
         />
       </div>
 
-      <span className="chip-category">{item.category}</span>
+      <select
+        className="chip-category-select"
+        value={item.category || "other"}
+        onChange={(e) => onChange({ ...item, category: e.target.value })}
+      >
+        {CATEGORIES.map((cat) => (
+          <option key={cat} value={cat}>
+            {cat}
+          </option>
+        ))}
+      </select>
 
       {typeof item.confidence === "number" && (
         <span className="chip-confidence">{Math.round(item.confidence * 100)}%</span>

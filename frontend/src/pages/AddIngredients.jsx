@@ -17,19 +17,40 @@ export default function AddIngredients({ scanState, setScanState }) {
     setPreviews(files.map((f) => URL.createObjectURL(f)));
   }
 
+  // async function startScan() {
+  //   if (!scanState.files.length) return;
+  //   nav("/analyzing");
+  //   try {
+  //     const result = await analyzePhotos(scanState.files);
+  //     setScanState((s) => ({ ...s, result }));
+  //     nav("/review");
+  //   } catch (e) {
+  //     setError("Couldn't analyze those photos. Try again.");
+  //     nav("/");
+  //   }
+  // }
   async function startScan() {
     if (!scanState.files.length) return;
+
     nav("/analyzing");
+
     try {
       const result = await analyzePhotos(scanState.files);
-      setScanState((s) => ({ ...s, result }));
+
+      setScanState((s) => ({
+        ...s,
+        result,
+      }));
+
+      // Navigate to review so user can confirm/edit both grocery ingredients and ready food dish ingredients
       nav("/review");
-    } catch (e) {
+
+    } catch (err) {
+      console.error(err);
       setError("Couldn't analyze those photos. Try again.");
       nav("/");
     }
   }
-
   return (
     <div className="screen add-screen">
       <div className="hero-text">
