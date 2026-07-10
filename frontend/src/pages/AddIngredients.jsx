@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { analyzePhotos } from "../api.js";
 
@@ -9,38 +9,36 @@ export default function AddIngredients({ scanState, setScanState }) {
   const [error, setError] = useState(null);
   const nav = useNavigate();
 
+  useEffect(() => {
+    if (scanState.result) {
+      setScanState((s) => ({ ...s, result: null }));
+    }
+  }, []);
+
   function handleFiles(fileList) {
     const files = Array.from(fileList);
     if (!files.length) return;
     setError(null);
-    setScanState((s) => ({ ...s, files }));
+    setScanState({ files, result: null });
     setPreviews(files.map((f) => URL.createObjectURL(f)));
+    if (cameraInput.current) cameraInput.current.value = "";
+    if (galleryInput.current) galleryInput.current.value = "";
   }
 
-  // async function startScan() {
-  //   if (!scanState.files.length) return;
-  //   nav("/analyzing");
-  //   try {
-  //     const result = await analyzePhotos(scanState.files);
-  //     setScanState((s) => ({ ...s, result }));
-  //     nav("/review");
-  //   } catch (e) {
-  //     setError("Couldn't analyze those photos. Try again.");
-  //     nav("/");
-  //   }
-  // }
   async function startScan() {
     if (!scanState.files.length) return;
 
+    const currentFiles = scanState.files;
+    setScanState({ files: currentFiles, result: null });
     nav("/analyzing");
 
     try {
-      const result = await analyzePhotos(scanState.files);
+      const result = await analyzePhotos(currentFiles);
 
-      setScanState((s) => ({
-        ...s,
+      setScanState({
+        files: currentFiles,
         result,
-      }));
+      });
 
       // Navigate to review so user can confirm/edit both grocery ingredients and ready food dish ingredients
       nav("/review");

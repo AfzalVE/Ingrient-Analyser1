@@ -112,7 +112,13 @@ export default function ReviewIngredients({ scanState, setScanState }) {
       </button>
 
       <div className="sticky-footer">
-        <button className="btn-secondary" onClick={() => nav("/")}>
+        <button
+          className="btn-secondary"
+          onClick={() => {
+            setScanState({ files: [], result: null });
+            nav("/");
+          }}
+        >
           Scan more
         </button>
         <button className="btn-secondary" disabled={saving} onClick={saveToPantry}>

@@ -3,189 +3,189 @@
     "id": "85b5a0e9-6f10-4716-b018-e8ab37ec0d3c",
     "name": "Cloves",
     "category": "spices",
-    "quantity": 50.0,
+    "quantity": 100.0,
     "unit": "g"
   },
   {
     "id": "38f6ab2d-4ef6-4cc4-a361-219b9cf74f07",
     "name": "Tea Leaves",
     "category": "packaged",
-    "quantity": 200.0,
+    "quantity": 300.0,
     "unit": "g"
   },
   {
     "id": "24833c9b-6a4b-4e62-9432-0941a694252c",
     "name": "Moong Dal",
     "category": "grains",
-    "quantity": 500.0,
+    "quantity": 1000.0,
     "unit": "g"
   },
   {
     "id": "8290b52c-e212-4c5a-a53f-ac4590a89361",
     "name": "Sugar",
     "category": "packaged",
-    "quantity": 1.0,
+    "quantity": 501.0,
     "unit": "kg"
   },
   {
     "id": "45dded76-d084-425f-9d50-5801b7cfdc19",
     "name": "Ghee",
     "category": "dairy",
-    "quantity": 500.0,
+    "quantity": 750.0,
     "unit": "g"
   },
   {
     "id": "164680a3-c12a-4115-81cc-4c958e819fdd",
     "name": "Cardamom",
     "category": "spices",
-    "quantity": 50.0,
+    "quantity": 100.0,
     "unit": "g"
   },
   {
     "id": "d5c2bb51-68aa-4450-8e25-dc0188bb8d18",
     "name": "Wheat Flour",
     "category": "packaged",
-    "quantity": 1.0,
+    "quantity": 1001.0,
     "unit": "kg"
   },
   {
     "id": "cec52e80-05bb-4804-939f-b811250b0b69",
     "name": "Ginger",
     "category": "produce",
-    "quantity": 100.0,
+    "quantity": 200.0,
     "unit": "g"
   },
   {
     "id": "a611db2f-1056-4ef0-9809-5683bb2b9735",
     "name": "Tomatoes",
     "category": "produce",
-    "quantity": 2.0,
+    "quantity": 4.0,
     "unit": "pcs"
   },
   {
     "id": "aeac0666-0886-4c0d-aac9-0bb7d23f4ac0",
     "name": "Cooking Oil",
     "category": "packaged",
-    "quantity": 1.0,
+    "quantity": 501.0,
     "unit": "L"
   },
   {
     "id": "93741135-2f4f-4892-b558-8a2da9dd8cd1",
     "name": "Coriander Leaves",
     "category": "produce",
-    "quantity": 100.0,
+    "quantity": 200.0,
     "unit": "g"
   },
   {
     "id": "9c7fbcc2-0e5c-4d74-85b4-b0b7d143a45e",
     "name": "Potatoes",
     "category": "produce",
-    "quantity": 2.0,
+    "quantity": 4.0,
     "unit": "pcs"
   },
   {
     "id": "edecb175-8733-4913-8343-13765aeadce0",
     "name": "Onions",
     "category": "produce",
-    "quantity": 2.0,
+    "quantity": 4.0,
     "unit": "pcs"
   },
   {
     "id": "e195a0c6-12ae-4051-bb95-020389e9be4c",
     "name": "Chickpea Flour",
     "category": "packaged",
-    "quantity": 500.0,
+    "quantity": 1000.0,
     "unit": "g"
   },
   {
     "id": "53093b99-bb05-4d43-92f2-13eae0aab212",
     "name": "Toor Dal",
     "category": "grains",
-    "quantity": 500.0,
+    "quantity": 1000.0,
     "unit": "g"
   },
   {
     "id": "bac7bf28-3012-4b66-81d4-ae040b4330cf",
     "name": "Rice",
     "category": "grains",
-    "quantity": 1.0,
+    "quantity": 1001.0,
     "unit": "kg"
   },
   {
     "id": "c92103ee-9389-4af8-a397-cbb7797962f3",
     "name": "500 G Chicken",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 3.0,
     "unit": "pcs"
   },
   {
     "id": "cc6a2e60-4341-46d5-850b-7e0005595965",
     "name": "2 Cups Basmati Rice",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 3.0,
     "unit": "pcs"
   },
   {
     "id": "c889ed7b-55ae-49a7-8c06-f43a295bdb97",
     "name": "2 Onions, Sliced",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 2.0,
     "unit": "pcs"
   },
   {
     "id": "0de7325c-c218-496d-8fd6-7ae4d8088bcb",
     "name": "1 Cup Yogurt",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 3.0,
     "unit": "pcs"
   },
   {
     "id": "d337563a-560f-418b-9cbe-fd8b01c3d26b",
     "name": "2 Tbsp Ghee",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 3.0,
     "unit": "pcs"
   },
   {
     "id": "77290577-9269-41fd-b6ad-0bec01fc0ae2",
     "name": "4 Green Cardamoms",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 3.0,
     "unit": "pcs"
   },
   {
     "id": "8220cb31-68c8-47f2-99bf-2700c4546d1d",
     "name": "4 Cloves",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 3.0,
     "unit": "pcs"
   },
   {
     "id": "7f85faac-bb8e-400e-9a33-569ce7048b4e",
     "name": "1 Tbsp Ginger-Garlic Paste",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 2.0,
     "unit": "pcs"
   },
   {
     "id": "6153560a-a409-4ccb-b0c5-24ed283938bc",
     "name": "1 Tsp Red Chili Powder",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 2.0,
     "unit": "pcs"
   },
   {
     "id": "d7ffcaf9-e2c0-4e37-800f-8133ea7e5826",
     "name": "1 Tsp Turmeric Powder",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 2.0,
     "unit": "pcs"
   },
   {
     "id": "76b61838-ced4-4741-8815-5858b575c2a5",
     "name": "Salt To Taste",
     "category": "other",
-    "quantity": 1.0,
+    "quantity": 3.0,
     "unit": "pcs"
   },
   {
@@ -198,6 +198,48 @@
   {
     "id": "eab2fdb4-b843-4332-8013-14eb1aeedf19",
     "name": "Fresh Coriander Leaves",
+    "category": "other",
+    "quantity": 2.0,
+    "unit": "pcs"
+  },
+  {
+    "id": "2eb74592-f414-43cd-ad2a-6c82ede539b1",
+    "name": "2 Onions Sliced",
+    "category": "other",
+    "quantity": 1.0,
+    "unit": "pcs"
+  },
+  {
+    "id": "1090edf2-6d40-46d1-8f7a-f2cd7f235d33",
+    "name": "1 Tsp Ginger-Garlic Paste",
+    "category": "other",
+    "quantity": 1.0,
+    "unit": "pcs"
+  },
+  {
+    "id": "c506cc78-54f0-489c-a942-db22a6693b1e",
+    "name": "1/2 Tsp Turmeric Powder",
+    "category": "other",
+    "quantity": 1.0,
+    "unit": "pcs"
+  },
+  {
+    "id": "affd181d-9200-4c22-9cae-78a7b2828f53",
+    "name": "2 Tsp Red Chili Powder",
+    "category": "other",
+    "quantity": 1.0,
+    "unit": "pcs"
+  },
+  {
+    "id": "0dff3d3c-e8d2-4a39-b1a0-3306b709d08d",
+    "name": "Fresh Mint Leaves",
+    "category": "other",
+    "quantity": 1.0,
+    "unit": "pcs"
+  },
+  {
+    "id": "e372eec4-f604-4525-a59b-5c1ff486ed1e",
+    "name": "Mint Leaves",
     "category": "other",
     "quantity": 1.0,
     "unit": "pcs"

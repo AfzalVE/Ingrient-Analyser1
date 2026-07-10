@@ -36,7 +36,12 @@ export default function App() {
               key={tab.path}
               className={`tab ${location.pathname === tab.path ? "active" : ""
                 }`}
-              onClick={() => navigate(tab.path)}
+              onClick={() => {
+                if (tab.path === "/") {
+                  setScanState({ files: [], result: null });
+                }
+                navigate(tab.path);
+              }}
             >
               {tab.label}
             </button>
@@ -76,7 +81,7 @@ export default function App() {
             }
           />
 
-          <Route path="/pantry" element={<Pantry />} />
+          <Route path="/pantry" element={<Pantry setScanState={setScanState} />} />
 
           <Route
             path="/recipes"

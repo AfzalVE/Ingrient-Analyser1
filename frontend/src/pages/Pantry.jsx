@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getPantry, deletePantryItem } from "../api.js";
 
-export default function Pantry() {
+export default function Pantry({ setScanState }) {
   const [pantry, setPantry] = useState([]);
   const [loading, setLoading] = useState(true);
   const nav = useNavigate();
@@ -40,7 +40,13 @@ export default function Pantry() {
       {!loading && pantry.length === 0 && (
         <div className="empty-state">
           <p>Your pantry is empty.</p>
-          <button className="btn-primary" onClick={() => nav("/")}>
+          <button
+            className="btn-primary"
+            onClick={() => {
+              if (setScanState) setScanState({ files: [], result: null });
+              nav("/");
+            }}
+          >
             Scan your first ingredients
           </button>
         </div>
@@ -67,7 +73,13 @@ export default function Pantry() {
 
       {pantry.length > 0 && (
         <div className="sticky-footer">
-          <button className="btn-secondary" onClick={() => nav("/")}>
+          <button
+            className="btn-secondary"
+            onClick={() => {
+              if (setScanState) setScanState({ files: [], result: null });
+              nav("/");
+            }}
+          >
             Scan more
           </button>
           <button className="btn-primary btn-wide" onClick={() => nav("/recipes")}>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getPantry, generateRecipes } from "../api";
 
-export default function GenerateRecipes({ scanState }) {
+export default function GenerateRecipes({ scanState, setScanState }) {
   const navigate = useNavigate();
 
   const [pantry, setPantry] = useState([]);
@@ -56,7 +56,13 @@ export default function GenerateRecipes({ scanState }) {
       return (
         <div className="screen">
           <h2>No recipe found.</h2>
-          <button className="btn-primary" onClick={() => navigate("/")}>
+          <button
+            className="btn-primary"
+            onClick={() => {
+              if (setScanState) setScanState({ files: [], result: null });
+              navigate("/");
+            }}
+          >
             Scan Again
           </button>
         </div>
@@ -65,7 +71,13 @@ export default function GenerateRecipes({ scanState }) {
 
     return (
       <div className="screen recipes-screen">
-        <RecipeCard recipe={recipe} onScanMore={() => navigate("/")} />
+        <RecipeCard
+          recipe={recipe}
+          onScanMore={() => {
+            if (setScanState) setScanState({ files: [], result: null });
+            navigate("/");
+          }}
+        />
       </div>
     );
   }
@@ -123,7 +135,13 @@ export default function GenerateRecipes({ scanState }) {
         <div className="empty-state">
           <h3>Your pantry is empty.</h3>
           <p>Add ingredients or scan your groceries first to get custom AI recipes right here!</p>
-          <button className="btn-primary" onClick={() => navigate("/")}>
+          <button
+            className="btn-primary"
+            onClick={() => {
+              if (setScanState) setScanState({ files: [], result: null });
+              navigate("/");
+            }}
+          >
             Scan Ingredients Now
           </button>
         </div>
